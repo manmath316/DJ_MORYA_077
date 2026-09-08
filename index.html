@@ -12,7 +12,7 @@
 
 <body>
 
-    <!-- HEADER -->
+    <!-- ================= HEADER ================= -->
     <header>
 
         <h1>DJ_MORYA_077</h1>
@@ -28,7 +28,7 @@
     </header>
 
 
-    <!-- HERO -->
+    <!-- ================= HERO ================= -->
     <section class="hero" id="home">
 
         <div class="hero-content">
@@ -68,7 +68,7 @@
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- ================= ABOUT ================= -->
     <section class="about" id="about">
 
         <div class="about-content">
@@ -100,130 +100,288 @@
 
     </section>
 
-<section id="services">
-    <h2>What We Offer</h2>
 
-    <div class="services-container">
+    <!-- ================= SERVICES ================= -->
+    <section id="services">
 
-        <div class="service-card">
-            <div class="service-icon">🎧</div>
-            <h3>Wedding Events</h3>
-            <p>Make your special day memorable with professional DJ music.</p>
-            <a href="#contact" class="book-btn">Book Now</a>
+        <h2>What We Offer</h2>
+
+        <div class="services-container">
+
+            <!-- Wedding -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎧
+                </div>
+
+                <h3>
+                    Wedding Events
+                </h3>
+
+                <p>
+                    Make your special day memorable
+                    with professional DJ music.
+                </p>
+
+                <a href="#contact" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+
+            <!-- Birthday -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎉
+                </div>
+
+                <h3>
+                    Birthday Parties
+                </h3>
+
+                <p>
+                    Enjoy energetic music and create
+                    unforgettable birthday memories.
+                </p>
+
+                <a href="#contact" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+
+            <!-- DJ Night -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎵
+                </div>
+
+                <h3>
+                    DJ Night
+                </h3>
+
+                <p>
+                    Enjoy powerful DJ music and an
+                    amazing night with your friends.
+                </p>
+
+                <a href="#contact" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+
+            <!-- Special Events -->
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Special Events
+                </h3>
+
+                <p>
+                    Professional DJ setup for all
+                    types of special events.
+                </p>
+
+                <a href="#contact" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="service-card">
-            <div class="service-icon">🎉</div>
-            <h3>Birthday Parties</h3>
-            <p>Enjoy energetic music and create unforgettable birthday memories.</p>
-            <a href="#contact" class="book-btn">Book Now</a>
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+    <section id="gallery">
+
+        <h2>
+            Our Gallery
+        </h2>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img
+                    src="dj1.jpeg"
+                    alt="DJ Photo 1"
+                    onclick="openImage(this.src)"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="dj2.jpeg"
+                    alt="DJ Photo 2"
+                    onclick="openImage(this.src)"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="dj3.jpeg"
+                    alt="DJ Photo 3"
+                    onclick="openImage(this.src)"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="dj4.jpeg"
+                    alt="DJ Photo 4"
+                    onclick="openImage(this.src)"
+                >
+            </div>
+
         </div>
 
-        <div class="service-card">
-            <div class="service-icon">🎵</div>
-            <h3>DJ Night</h3>
-            <p>Enjoy powerful DJ music and an amazing night with your friends.</p>
-            <a href="#contact" class="book-btn">Book Now</a>
-        </div>
+    </section>
 
-        <div class="service-card">
-            <div class="service-icon">✨</div>
-            <h3>Special Events</h3>
-            <p>Professional DJ setup for all types of special events.</p>
-            <a href="#contact" class="book-btn">Book Now</a>
-        </div>
+
+    <!-- ================= IMAGE POPUP ================= -->
+    <!-- Only ONE popup is required -->
+
+    <div
+        id="imagePopup"
+        class="image-popup"
+        onclick="closeImage()"
+    >
+
+        <span class="close-btn">
+            &times;
+        </span>
+
+        <img
+            id="popupImage"
+            src=""
+            alt="DJ Photo"
+        >
 
     </div>
-</section>
 
-<!-- Gallery Section -->
-<section id="gallery">
-    <h2>Our Gallery</h2>
 
-    <div class="gallery-container">
-
-        <div class="gallery-item">
-            <img src="dj1.jpeg" alt="DJ Photo 1" onclick="openImage(this.src)">
-        </div>
-
-        <div class="gallery-item">
-            <img src="dj2.jpeg" alt="DJ Photo 2" onclick="openImage(this.src)">
-        </div>
-
-        <div class="gallery-item">
-            <img src="dj3.jpeg" alt="DJ Photo 3" onclick="openImage(this.src)">
-        </div>
-
-        <div class="gallery-item">
-            <img src="dj4.jpeg" alt="DJ Photo 4" onclick="openImage(this.src)">
-        </div>
-
-    </div>
-</section>
-
-<!-- Image Popup -->
-<div id="imagePopup" class="image-popup" onclick="closeImage()">
-    <span class="close-btn">&times;</span>
-    <img id="popupImage" src="" alt="DJ Photo">
-</div>
+    <!-- ================= CONTACT / BOOKING ================= -->
     <section id="contact">
 
-    <h2>Book DJ Morya</h2>
+        <h2>
+            Book DJ Morya
+        </h2>
 
-    <div class="contact-container">
+        <div class="contact-container">
 
-        <form class="contact-form" id="bookingForm">
-
-            <input 
-                type="text" 
-                id="name" 
-                placeholder="Your Name"
+            <form
+                class="contact-form"
+                id="bookingForm"
             >
 
-            <input 
-                type="tel" 
-                id="mobile" 
-                placeholder="Mobile Number"
-            >
+                <!-- Name -->
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
 
-            <select id="event">
-                <option value="">Select Event</option>
-                <option>Wedding</option>
-                <option>Birthday Party</option>
-                <option>DJ Night</option>
-                <option>Special Event</option>
-            </select>
 
-            <input 
-                type="date" 
-                id="date"
-            >
+                <!-- Mobile -->
+                <input
+                    type="tel"
+                    id="mobile"
+                    placeholder="Mobile Number"
+                    required
+                >
 
-            <textarea 
-                id="message" 
-                placeholder="Event Details"
-            ></textarea>
 
-            <button type="submit">
-                Send Booking Request 🎧
-            </button>
+                <!-- Event -->
+                <select
+                    id="event"
+                    required
+                >
 
-        </form>
+                    <option value="">
+                        Select Event
+                    </option>
 
-    </div>
+                    <option value="Wedding">
+                        Wedding
+                    </option>
 
-</section>
+                    <option value="Birthday Party">
+                        Birthday Party
+                    </option>
 
-</section>
-<div id="imagePopup" class="image-popup" onclick="closeImage()">
-    <span class="close-btn">&times;</span>
-    <img id="popupImage" src="" alt="DJ Photo">
-</div>
+                    <option value="DJ Night">
+                        DJ Night
+                    </option>
 
-<script src="script.js"></script>
+                    <option value="Special Event">
+                        Special Event
+                    </option>
 
-<footer>
-    <p>© 2026 <span>DJ_MORYA_077</span> | All Rights Reserved.</p>
-    <p>Professional DJ Services 🎧</p>
-</footer>
+                </select>
+
+
+                <!-- Date -->
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+
+
+                <!-- Message -->
+                <textarea
+                    id="message"
+                    placeholder="Event Details"
+                    required
+                ></textarea>
+
+
+                <!-- Submit -->
+                <button type="submit">
+                    Send Booking Request 🎧
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026
+            <span>DJ_MORYA_077</span>
+            | All Rights Reserved.
+        </p>
+
+        <p>
+            Professional DJ Services 🎧
+        </p>
+
+    </footer>
+
 </body>
+
+</html>
