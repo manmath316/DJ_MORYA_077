@@ -48,3 +48,13 @@ if (bookingForm) {
             "Mobile: " + mobile + "%0A" +
             "Event: " + eventType + "%0A" +
             "Date: " + date +
+
+            // Gallery Popup
+function openImage(imageSrc) {
+    document.getElementById("imagePopup").style.display = "flex";
+    document.getElementById("popupImage").src = imageSrc;
+}
+
+function closeImage() {
+    document.getElementById("imagePopup").style.display = "none";
+}
