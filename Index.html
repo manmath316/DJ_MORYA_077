@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DJ_MORYA_077</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>DJ_MORYA_077</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                PROFESSIONAL DJ SERVICES
+            </p>
+
+            <h2>
+                Welcome to<br>
+                <span>DJ_MORYA_077</span>
+            </h2>
+
+            <p class="tagline">
+                Feel the Vibe | Live the Music | Make it Unforgettable
+            </p>
+
+            <p class="description">
+                Professional DJ services for weddings,
+                birthdays, parties and special events.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn btn-book">
+                    Book Now
+                </a>
+
+                <a href="#gallery" class="btn btn-gallery">
+                    View Gallery
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <p class="section-title">
+                ABOUT US
+            </p>
+
+            <h2>
+                We Create
+                <span>Unforgettable Moments</span>
+            </h2>
+
+            <p>
+                DJ_MORYA_077 is a professional DJ service
+                for weddings, birthdays, parties and special events.
+            </p>
+
+            <p>
+                Our goal is simple — great music,
+                amazing energy and unforgettable memories.
+            </p>
+
+            <a href="#contact" class="btn btn-book">
+                Book DJ
+            </a>
+
+        </div>
+
+    </section>
+
+<section id="services">
+    <h2>What We Offer</h2>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <div class="service-icon">🎧</div>
+            <h3>Wedding Events</h3>
+            <p>Make your special day memorable with professional DJ music.</p>
+            <a href="#contact" class="book-btn">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎉</div>
+            <h3>Birthday Parties</h3>
+            <p>Enjoy energetic music and create unforgettable birthday memories.</p>
+            <a href="#contact" class="book-btn">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎵</div>
+            <h3>DJ Night</h3>
+            <p>Enjoy powerful DJ music and an amazing night with your friends.</p>
+            <a href="#contact" class="book-btn">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">✨</div>
+            <h3>Special Events</h3>
+            <p>Professional DJ setup for all types of special events.</p>
+            <a href="#contact" class="book-btn">Book Now</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <h2>Our Gallery</h2>
+
+    <div class="gallery-container">
+
+        <div class="gallery-item">
+            <img src="HTML/dj1.jpeg" alt="DJ Photo 1" onclick="openImage(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="HTML/dj2.jpeg" alt="DJ Photo 2" onclick="openImage(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="HTML/dj3.jpeg" alt="DJ Photo 3" onclick="openImage(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="HTML/dj4.jpeg" alt="DJ Photo 4" onclick="openImage(this.src)">
+        </div>
+
+    </div>
+</section>
+
+<!-- Image Popup -->
+<div id="imagePopup" class="image-popup" onclick="closeImage()">
+    <span class="close-btn">&times;</span>
+    <img id="popupImage" src="" alt="DJ Photo">
+</div>
+    <section id="contact">
+
+    <h2>Book DJ Morya</h2>
+
+    <div class="contact-container">
+
+        <form class="contact-form" id="bookingForm">
+
+            <input 
+                type="text" 
+                id="name" 
+                placeholder="Your Name"
+            >
+
+            <input 
+                type="tel" 
+                id="mobile" 
+                placeholder="Mobile Number"
+            >
+
+            <select id="event">
+                <option value="">Select Event</option>
+                <option>Wedding</option>
+                <option>Birthday Party</option>
+                <option>DJ Night</option>
+                <option>Special Event</option>
+            </select>
+
+            <input 
+                type="date" 
+                id="date"
+            >
+
+            <textarea 
+                id="message" 
+                placeholder="Event Details"
+            ></textarea>
+
+            <button type="submit">
+                Send Booking Request 🎧
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</section>
+<div id="imagePopup" class="image-popup" onclick="closeImage()">
+    <span class="close-btn">&times;</span>
+    <img id="popupImage" src="" alt="DJ Photo">
+</div>
+
+<script src="JS/script.js"></script>
+
+<footer>
+    <p>© 2026 <span>DJ_MORYA_077</span> | All Rights Reserved.</p>
+    <p>Professional DJ Services 🎧</p>
+</footer>
+</body>
