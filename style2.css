@@ -97,7 +97,7 @@ nav a:hover {
             rgba(0, 0, 0, 0.60),
             rgba(0, 0, 0, 0.75)
         ),
-        url("../HTML/dj.jpeg");
+        url("dj.jpeg");
 
     background-size: cover;
     background-position: center;
