@@ -1,31 +1,20 @@
-// ================================
-// DJ MORYA 077 - JavaScript
-// ================================
-
-
-// ================================
-// 1. BOOKING FORM
-// ================================
+// =========================
+// BOOKING FORM
+// =========================
 
 const bookingForm = document.getElementById("bookingForm");
 
 if (bookingForm) {
 
-    bookingForm.addEventListener("submit", function (event) {
+    bookingForm.addEventListener("submit", function(event) {
 
         event.preventDefault();
 
-        // Get form values
         const name = document.getElementById("name").value.trim();
         const mobile = document.getElementById("mobile").value.trim();
         const eventType = document.getElementById("event").value;
         const date = document.getElementById("date").value;
         const message = document.getElementById("message").value.trim();
-
-
-        // ================================
-        // Required fields check
-        // ================================
 
         if (
             name === "" ||
@@ -33,120 +22,78 @@ if (bookingForm) {
             eventType === "" ||
             date === ""
         ) {
-
             alert("Please fill all required fields.");
-
             return;
         }
 
-
-        // ================================
-        // Mobile number check
-        // ================================
-
-        const cleanMobile = mobile.replace(/\D/g, "");
-
-        if (cleanMobile.length < 10) {
-
+        if (mobile.length < 10) {
             alert("Please enter a valid mobile number.");
-
             return;
         }
-
-
-        // ================================
-        // WhatsApp Number
-        // ================================
 
         const whatsappNumber = "918605481224";
 
-
-        // ================================
-        // WhatsApp Message
-        // ================================
-
         const whatsappMessage =
-            "Hello DJ Morya! 🎧\n\n" +
-            "I would like to book your DJ service.\n\n" +
-            "Name: " + name + "\n" +
-            "Mobile: " + mobile + "\n" +
-            "Event: " + eventType + "\n" +
-            "Date: " + date + "\n" +
-            "Event Details: " + (message || "Not provided");
-
-
-        // ================================
-        // Open WhatsApp
-        // ================================
+            "Hello DJ Morya!%0A%0A" +
+            "Name: " + name + "%0A" +
+            "Mobile: " + mobile + "%0A" +
+            "Event: " + eventType + "%0A" +
+            "Date: " + date + "%0A" +
+            "Details: " + message;
 
         const whatsappURL =
             "https://wa.me/" +
             whatsappNumber +
             "?text=" +
-            encodeURIComponent(whatsappMessage);
-
+            whatsappMessage;
 
         window.open(whatsappURL, "_blank");
 
-
-        // ================================
-        // Success message
-        // ================================
-
-        alert("Booking request is ready! WhatsApp is opening.");
-
-
-        // Clear form
         bookingForm.reset();
-
     });
-
 }
 
 
-// ================================
-// 2. GALLERY IMAGE POPUP
-// ================================
+// =========================
+// GALLERY POPUP
+// =========================
 
 function openImage(imageSrc) {
 
-    const imagePopup = document.getElementById("imagePopup");
-    const popupImage = document.getElementById("popupImage");
+    document.getElementById("imagePopup").style.display = "flex";
 
-    if (imagePopup && popupImage) {
-
-        popupImage.src = imageSrc;
-
-        imagePopup.style.display = "flex";
-    }
+    document.getElementById("popupImage").src = imageSrc;
 }
 
-
-// ================================
-// 3. CLOSE IMAGE POPUP
-// ================================
 
 function closeImage() {
 
-    const imagePopup = document.getElementById("imagePopup");
-
-    if (imagePopup) {
-
-        imagePopup.style.display = "none";
-    }
+    document.getElementById("imagePopup").style.display = "none";
 }
 
 
-// ================================
-// 4. CLOSE POPUP WITH ESC KEY
-// ================================
+// =========================
+// GOOGLE MAP
+// =========================
 
-document.addEventListener("keydown", function (event) {
+function initMap() {
 
-    if (event.key === "Escape") {
+    const location = {
+        lat: 18.6298,
+        lng: 73.7997
+    };
 
-        closeImage();
+    const map = new google.maps.Map(
+        document.getElementById("map"),
+        {
+            zoom: 14,
+            center: location
+        }
+    );
 
-    }
-
-});
+    new google.maps.Marker({
+        position: location,
+        map: map,
+        title: "DJ Morya"
+    });
+}

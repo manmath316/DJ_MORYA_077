@@ -7,14 +7,13 @@
 
     <title>DJ_MORYA_077</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style2.css">
 </head>
 
 <body>
 
     <!-- HEADER -->
     <header>
-
         <h1>DJ_MORYA_077</h1>
 
         <nav>
@@ -25,7 +24,6 @@
             <a href="#contact">Contact</a>
             <a href="#contact" class="book-btn">Book Now</a>
         </nav>
-
     </header>
 
 
@@ -34,9 +32,7 @@
 
         <div class="hero-content">
 
-            <p class="small-title">
-                PROFESSIONAL DJ SERVICES
-            </p>
+            <p class="small-title">PROFESSIONAL DJ SERVICES</p>
 
             <h2>
                 Welcome to<br>
@@ -53,15 +49,8 @@
             </p>
 
             <div class="hero-buttons">
-
-                <a href="#contact" class="btn btn-book">
-                    Book Now
-                </a>
-
-                <a href="#gallery" class="btn btn-gallery">
-                    View Gallery
-                </a>
-
+                <a href="#contact" class="btn btn-book">Book Now</a>
+                <a href="#gallery" class="btn btn-gallery">View Gallery</a>
             </div>
 
         </div>
@@ -72,32 +61,24 @@
     <!-- ABOUT -->
     <section class="about" id="about">
 
-        <div class="about-content">
+        <p class="section-title">ABOUT US</p>
 
-            <p class="section-title">
-                ABOUT US
-            </p>
+        <h2>
+            We Create
+            <span>Unforgettable Moments</span>
+        </h2>
 
-            <h2>
-                We Create
-                <span>Unforgettable Moments</span>
-            </h2>
+        <p>
+            DJ_MORYA_077 is a professional DJ service
+            for weddings, birthdays, parties and special events.
+        </p>
 
-            <p>
-                DJ_MORYA_077 is a professional DJ service
-                for weddings, birthdays, parties and special events.
-            </p>
+        <p>
+            Our goal is simple — great music,
+            amazing energy and unforgettable memories.
+        </p>
 
-            <p>
-                Our goal is simple — great music,
-                amazing energy and unforgettable memories.
-            </p>
-
-            <a href="#contact" class="btn btn-book">
-                Book DJ
-            </a>
-
-        </div>
+        <a href="#contact" class="btn btn-book">Book DJ</a>
 
     </section>
 
@@ -165,25 +146,25 @@
         <div class="gallery-container">
 
             <div class="gallery-item">
-                <img src="dj1.jpeg"
+                <img src="HTML/dj1.jpeg"
                      alt="DJ Photo 1"
                      onclick="openImage(this.src)">
             </div>
 
             <div class="gallery-item">
-                <img src="dj2.jpeg"
+                <img src="HTML/dj2.jpeg"
                      alt="DJ Photo 2"
                      onclick="openImage(this.src)">
             </div>
 
             <div class="gallery-item">
-                <img src="dj3.jpeg"
+                <img src="HTML/dj3.jpeg"
                      alt="DJ Photo 3"
                      onclick="openImage(this.src)">
             </div>
 
             <div class="gallery-item">
-                <img src="dj4.jpeg"
+                <img src="HTML/dj4.jpeg"
                      alt="DJ Photo 4"
                      onclick="openImage(this.src)">
             </div>
@@ -236,24 +217,23 @@
                         Select Event
                     </option>
 
-                    <option>
+                    <option value="Wedding">
                         Wedding
                     </option>
 
-                    <option>
-                        Birthday Party
+                    <option value="Birthday">
+                        Birthday
                     </option>
 
-                    <option>
+                    <option value="DJ Night">
                         DJ Night
                     </option>
 
-                    <option>
+                    <option value="Special Event">
                         Special Event
                     </option>
 
                 </select>
-
 
                 <input
                     type="date"
@@ -261,12 +241,9 @@
                     required
                 >
 
-
                 <textarea
                     id="message"
-                    placeholder="Event Details">
-                </textarea>
-
+                    placeholder="Event Details"></textarea>
 
                 <button type="submit">
                     Send Booking Request 🎧
@@ -279,25 +256,37 @@
     </section>
 
 
+    <!-- MAP -->
+    <div class="map-container">
+
+        <h3>Find DJ Morya 📍</h3>
+
+<iframe
+    src="https://www.openstreetmap.org/export/embed.html?bbox=73.78%2C18.61%2C73.82%2C18.65&layer=mapnik&marker=18.6298%2C73.7997"
+    width="100%"
+    height="400"
+    style="border:0; border-radius:15px;"
+    loading="lazy">
+</iframe>
+    </div>
+
+
     <!-- FOOTER -->
     <footer>
 
         <p>
             © 2026
             <span>DJ_MORYA_077</span>
-            | All Rights Reserved.
-        </p>
-
-        <p>
-            Professional DJ Services 🎧
+            | All Rights Reserved
         </p>
 
     </footer>
 
 
     <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
 
+    
 </body>
 
 </html>
