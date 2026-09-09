@@ -12,7 +12,7 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- HEADER -->
     <header>
 
         <h1>DJ_MORYA_077</h1>
@@ -29,7 +29,7 @@
     </header>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- HERO -->
     <section class="hero" id="home">
 
         <div class="hero-content">
@@ -69,7 +69,7 @@
     </section>
 
 
-    <!-- ================= ABOUT ================= -->
+    <!-- ABOUT -->
     <section class="about" id="about">
 
         <div class="about-content">
@@ -102,102 +102,54 @@
     </section>
 
 
-    <!-- ================= SERVICES ================= -->
+    <!-- SERVICES -->
     <section id="services">
 
         <h2>What We Offer</h2>
 
         <div class="services-container">
 
-            <!-- Wedding -->
             <div class="service-card">
-
-                <div class="service-icon">
-                    🎧
-                </div>
-
-                <h3>
-                    Wedding Events
-                </h3>
-
+                <div class="service-icon">🎧</div>
+                <h3>Wedding Events</h3>
                 <p>
                     Make your special day memorable
                     with professional DJ music.
                 </p>
-
-                <a href="#contact" class="book-btn">
-                    Book Now
-                </a>
-
+                <a href="#contact" class="book-btn">Book Now</a>
             </div>
 
 
-            <!-- Birthday -->
             <div class="service-card">
-
-                <div class="service-icon">
-                    🎉
-                </div>
-
-                <h3>
-                    Birthday Parties
-                </h3>
-
+                <div class="service-icon">🎉</div>
+                <h3>Birthday Parties</h3>
                 <p>
                     Enjoy energetic music and create
                     unforgettable birthday memories.
                 </p>
-
-                <a href="#contact" class="book-btn">
-                    Book Now
-                </a>
-
+                <a href="#contact" class="book-btn">Book Now</a>
             </div>
 
 
-            <!-- DJ Night -->
             <div class="service-card">
-
-                <div class="service-icon">
-                    🎵
-                </div>
-
-                <h3>
-                    DJ Night
-                </h3>
-
+                <div class="service-icon">🎵</div>
+                <h3>DJ Night</h3>
                 <p>
                     Enjoy powerful DJ music and an
                     amazing night with your friends.
                 </p>
-
-                <a href="#contact" class="book-btn">
-                    Book Now
-                </a>
-
+                <a href="#contact" class="book-btn">Book Now</a>
             </div>
 
 
-            <!-- Special Events -->
             <div class="service-card">
-
-                <div class="service-icon">
-                    ✨
-                </div>
-
-                <h3>
-                    Special Events
-                </h3>
-
+                <div class="service-icon">✨</div>
+                <h3>Special Events</h3>
                 <p>
                     Professional DJ setup for all
                     types of special events.
                 </p>
-
-                <a href="#contact" class="book-btn">
-                    Book Now
-                </a>
-
+                <a href="#contact" class="book-btn">Book Now</a>
             </div>
 
         </div>
@@ -205,45 +157,35 @@
     </section>
 
 
-    <!-- ================= GALLERY ================= -->
+    <!-- GALLERY -->
     <section id="gallery">
 
-        <h2>
-            Our Gallery
-        </h2>
+        <h2>Our Gallery</h2>
 
         <div class="gallery-container">
 
             <div class="gallery-item">
-                <img
-                    src="dj1.jpeg"
-                    alt="DJ Photo 1"
-                    onclick="openImage(this.src)"
-                >
+                <img src="dj1.jpeg"
+                     alt="DJ Photo 1"
+                     onclick="openImage(this.src)">
             </div>
 
             <div class="gallery-item">
-                <img
-                    src="dj2.jpeg"
-                    alt="DJ Photo 2"
-                    onclick="openImage(this.src)"
-                >
+                <img src="dj2.jpeg"
+                     alt="DJ Photo 2"
+                     onclick="openImage(this.src)">
             </div>
 
             <div class="gallery-item">
-                <img
-                    src="dj3.jpeg"
-                    alt="DJ Photo 3"
-                    onclick="openImage(this.src)"
-                >
+                <img src="dj3.jpeg"
+                     alt="DJ Photo 3"
+                     onclick="openImage(this.src)">
             </div>
 
             <div class="gallery-item">
-                <img
-                    src="dj4.jpeg"
-                    alt="DJ Photo 4"
-                    onclick="openImage(this.src)"
-                >
+                <img src="dj4.jpeg"
+                     alt="DJ Photo 4"
+                     onclick="openImage(this.src)">
             </div>
 
         </div>
@@ -251,43 +193,29 @@
     </section>
 
 
-    <!-- ================= IMAGE POPUP ================= -->
-    <!-- Only ONE popup is required -->
+    <!-- IMAGE POPUP -->
+    <div id="imagePopup"
+         class="image-popup"
+         onclick="closeImage()">
 
-    <div
-        id="imagePopup"
-        class="image-popup"
-        onclick="closeImage()"
-    >
+        <span class="close-btn">&times;</span>
 
-        <span class="close-btn">
-            &times;
-        </span>
-
-        <img
-            id="popupImage"
-            src=""
-            alt="DJ Photo"
-        >
+        <img id="popupImage"
+             src=""
+             alt="DJ Photo">
 
     </div>
 
 
-    <!-- ================= CONTACT / BOOKING ================= -->
+    <!-- CONTACT / BOOKING -->
     <section id="contact">
 
-        <h2>
-            Book DJ Morya
-        </h2>
+        <h2>Book DJ Morya</h2>
 
         <div class="contact-container">
 
-            <form
-                class="contact-form"
-                id="bookingForm"
-            >
+            <form class="contact-form" id="bookingForm">
 
-                <!-- Name -->
                 <input
                     type="text"
                     id="name"
@@ -295,8 +223,6 @@
                     required
                 >
 
-
-                <!-- Mobile -->
                 <input
                     type="tel"
                     id="mobile"
@@ -304,37 +230,31 @@
                     required
                 >
 
-
-                <!-- Event -->
-                <select
-                    id="event"
-                    required
-                >
+                <select id="event" required>
 
                     <option value="">
                         Select Event
                     </option>
 
-                    <option value="Wedding">
+                    <option>
                         Wedding
                     </option>
 
-                    <option value="Birthday Party">
+                    <option>
                         Birthday Party
                     </option>
 
-                    <option value="DJ Night">
+                    <option>
                         DJ Night
                     </option>
 
-                    <option value="Special Event">
+                    <option>
                         Special Event
                     </option>
 
                 </select>
 
 
-                <!-- Date -->
                 <input
                     type="date"
                     id="date"
@@ -342,15 +262,12 @@
                 >
 
 
-                <!-- Message -->
                 <textarea
                     id="message"
-                    placeholder="Event Details"
-                    required
-                ></textarea>
+                    placeholder="Event Details">
+                </textarea>
 
 
-                <!-- Submit -->
                 <button type="submit">
                     Send Booking Request 🎧
                 </button>
@@ -362,13 +279,7 @@
     </section>
 
 
-    <!-- ================= JAVASCRIPT ================= -->
-
-    <script src="script.js"></script>
-
-
-    <!-- ================= FOOTER ================= -->
-
+    <!-- FOOTER -->
     <footer>
 
         <p>
@@ -382,6 +293,10 @@
         </p>
 
     </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 
