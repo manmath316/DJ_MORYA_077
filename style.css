@@ -669,3 +669,74 @@ button:hover {
     }
 }
 }
+/* =========================
+   ATTRACTIVE EQUIPMENT
+========================= */
+
+#equipment {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+#equipment h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.equipment-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.equipment-card {
+    padding: 35px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.3s ease;
+}
+
+.equipment-card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.equipment-icon {
+    font-size: 55px;
+    margin-bottom: 18px;
+}
+
+.equipment-card h3 {
+    font-size: 21px;
+    margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    #equipment h2 {
+        font-size: 30px;
+    }
+
+    .equipment-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .equipment-card {
+        padding: 25px 10px;
+    }
+
+    .equipment-icon {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .equipment-container {
+        grid-template-columns: 1fr;
+    }
+}
