@@ -617,38 +617,46 @@ button:hover {
         height: 250px;
     }
 }
-/* EQUIPMENT */
-
 #equipment {
-    padding: 60px 5%;
+    padding: 70px 5%;
     text-align: center;
+}
+
+#equipment h2 {
+    margin-bottom: 40px;
 }
 
 .equipment-container {
     max-width: 1000px;
-    margin: 30px auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .equipment-card {
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
+    padding: 30px 20px;
+    border-radius: 18px;
+    background: #151515;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.equipment-card:hover {
+    transform: translateY(-8px);
 }
 
 .equipment-icon {
-    font-size: 45px;
-    margin-bottom: 10px;
+    font-size: 50px;
+    margin-bottom: 15px;
 }
 
 .equipment-card h3 {
     margin: 0;
+    font-size: 20px;
 }
 
 /* Mobile */
-
 @media (max-width: 768px) {
     .equipment-container {
         grid-template-columns: 1fr 1fr;
@@ -659,4 +667,5 @@ button:hover {
     .equipment-container {
         grid-template-columns: 1fr;
     }
+}
 }
